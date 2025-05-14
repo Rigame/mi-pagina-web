@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construcción Sostenible</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background-color: #f4f4f4; 
+      line-height: 1.6;
+    }
+    header { 
+      background: linear-gradient(135deg, #2f4f4f, #3a5f5f);
+      color: white; 
+      padding: 2em 1em; 
+      text-align: center; 
+    }
+    footer { 
+      background-color: #2f4f4f; 
+      color: white; 
+      padding: 1em; 
+      text-align: center; 
+    }
+    nav { 
+      background-color: #e0e0e0; 
+      padding: 1em; 
+      text-align: center; 
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a { 
+      margin: 0 1em; 
+      text-decoration: none; 
+      color: #333; 
+      font-weight: bold; 
+    }
+    nav a:hover {
+      color: #2f4f4f;
+      text-decoration: underline;
+    }
+    section { 
+      padding: 2em; 
+      background-color: white; 
+      margin: 1em; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    form input, form textarea, form select { 
+      display: block; 
+      margin: 1em 0; 
+      width: 100%; 
+      padding: 0.5em; 
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .card { 
+      border: 1px solid #ccc; 
+      padding: 1em; 
+      border-radius: 8px; 
+      margin-bottom: 1em; 
+      background-color: #fafafa; 
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      background-color: #2f4f4f;
+      color: white;
+      border: none;
+      padding: 0.8em 1.5em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #3a5f5f;
+    }
+    .section-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 1em 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .img-container {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .img-container img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 0.5em 0; }
+      .img-container img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ProyectAR</h1>
+    <p>Conectamos clientes con profesionales expertos en construcción</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#quienes">Quiénes Somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#materiales">Materiales</a>
+    <a href="#registro">Registrarse</a>
+    <a href="#buscar">Buscar Profesionales</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construcción sostenible" class="section-img">
+    <p>Bienvenido a nuestra plataforma. Aquí podés encontrar expertos en pintura, albañilería, carpintería y más.</p>
+  </section>
+
+  <section id="quienes">
+    <h2>Quiénes Somos</h2>
+    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Equipo de construcción" class="section-img">
+    <p>Somos una empresa misionera que apuesta a la tecnología y la sustentabilidad en el mundo de la construcción.</p>
+    <p>Fundada en 2010, hemos participado en más de 200 proyectos ecológicos en toda la región.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="img-container">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Diseño de casas">
+      <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Asesoramiento">
+      <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Profesionales">
+    </div>
+    <ul>
+      <li>Diseño de casas e infraestructuras</li>
+      <li>Asesoramiento en construcción ecológica</li>
+      <li>Conexión con profesionales verificados</li>
+    </ul>
+  </section>
+
+  <section id="materiales">
+    <h2>Materiales Sostenibles</h2>
+    <div class="img-container">
+      <img src="https://atriainnovation.com/uploads/2023/11/fotoblogconstruccion.jpg" alt="Madera certificada">
+      <img src="https://i0.wp.com/www.asfoso.org/wp-content/uploads/2024/05/certificacao-florestal-810x420-1.jpg?fit=810%2C420&ssl=1" alt="Pinturas ecológicas">
+      <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ladrillos reciclados">
+    </div>
+    <p>Recomendamos el uso de:</p>
+    <ul>
+      <li>Madera certificada FSC</li>
+      <li>Pinturas ecológicas sin VOC</li>
+      <li>Ladrillos reciclados de bajo impacto</li>
+      <li>Aislantes naturales (corcho, lana de oveja)</li>
+    </ul>
+  </section>
+
+  <section id="registro">
+    <h2>Registro de Profesionales</h2>
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Profesional trabajando" class="section-img">
+    <form onsubmit="return validarFormulario()">
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <select required>
+        <option value="">Especialidad</option>
+        <option value="pintor">Pintor</option>
+        <option value="albanil">Albañil</option>
+        <option value="plomero">Plomero</option>
+        <option value="carpintero">Carpintero</option>
+      </select>
+      <textarea placeholder="Experiencia (años, proyectos, etc.)" required></textarea>
+      <input type="file" accept="image/*" />
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="buscar">
+    <h2>Buscar Profesionales</h2>
+    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Equipo de trabajo" class="section-img">
+    <p>Buscá expertos por especialidad:</p>
+    <select id="filtro">
+      <option value="todos">Todos</option>
+      <option value="pintor">Pintor</option>
+      <option value="albanil">Albañil</option>
+      <option value="plomero">Plomero</option>
+      <option value="carpintero">Carpintero</option>
+    </select>
+    <div class="card" data-especialidad="albanil">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pedro Gómez" style="width:80px;border-radius:50%;float:left;margin-right:1em;">
+      <strong>Pedro Gómez</strong><br/>
+      <span style="color:#2f4f4f;">Albañil</span><br/>
+      10 años de experiencia en obras residenciales. Especialista en estructuras antisísmicas.
+    </div>
+    <div class="card" data-especialidad="pintor">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lucía Méndez" style="width:80px;border-radius:50%;float:left;margin-right:1em;">
+      <strong>Lucía Méndez</strong><br/>
+      <span style="color:#2f4f4f;">Pintora</span><br/>
+      Profesional con enfoque en pinturas ecológicas. Certificada en técnicas de baja emisión.
+    </div>
+    <div class="card" data-especialidad="plomero">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Carlos Ruiz" style="width:80px;border-radius:50%;float:left;margin-right:1em;">
+      <strong>Carlos Ruiz</strong><br/>
+      <span style="color:#2f4f4f;">Plomero</span><br/>
+      Especializado en sistemas de agua reciclada y eficiencia energética.
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Oficina" class="section-img">
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu email" required />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div style="margin-top:2em;">
+      <h3>Visítanos</h3>
+      <p>📍 Av. Siempre Verde 123, Posadas, Misiones</p>
+      <p>📞 +54 376 4123456</p>
+      <p>✉️ info@construccionesmisiones.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Construcciones Sustentables Misiones</p>
+    <div style="margin-top:1em;">
+      <a href="#" style="color:white;margin:0 0.5em;">Facebook</a>
+      <a href="#" style="color:white;margin:0 0.5em;">Instagram</a>
+      <a href="#" style="color:white;margin:0 0.5em;">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    // Filtro de profesionales
+    document.getElementById('filtro').addEventListener('change', function() {
+      const filtro = this.value;
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        if (filtro === 'todos') {
+          card.style.display = 'block';
+        } else {
+          const especialidad = card.getAttribute('data-especialidad');
+          card.style.display = especialidad === filtro ? 'block' : 'none';
+        }
+      });
+    });
+
+    // Validación de formulario
+    function validarFormulario() {
+      const nombre = document.querySelector('#registro input[type="text"]').value;
+      if (nombre.trim() === '') {
+        alert("Por favor, ingresa tu nombre.");
+        return false;
+      }
+      alert("¡Registro enviado con éxito! Nos contactaremos pronto.");
+      return true;
+    }
+  </script>
+</body>
+</html>
